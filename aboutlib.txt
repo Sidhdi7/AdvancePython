@@ -1,0 +1,29 @@
+playsound – Audio Playback Library
+The playsound library in Python is a simple yet effective tool to play audio files using just one line of code. 
+It supports MP3 and WAV formats, making it a quick choice for basic playback needs. Because it is cross-platform, you can use it on Windows, macOS, or Linux without major adjustments. It is especially handy for educational demos, alert systems, or prototypes where you just need to hear a sound. 
+The core function playsound('file.mp3') plays the audio and blocks further execution until it completes. 
+However, it doesn’t offer advanced controls like pause, stop, or volume adjustment. 
+It's also prone to freezing if used with long audio files in environments like Jupyter. 
+Despite its limitations, it’s ideal for lightweight scripts. It doesn’t require any external media players or heavy dependencies. 
+It’s a go-to for anyone who wants to add sound quickly without diving deep into audio programming.
+
+gTTS (Google Text-to-Speech) – Text-to-Speech Generator
+The gTTS library allows Python developers to convert text into speech using Google’s online text-to-speech engine. 
+It provides a high-quality, natural-sounding voice output that can be saved as an MP3 file.
+ The usage is simple—input the text, specify the language, and save the generated audio. 
+Because it relies on Google's API, it requires an internet connection to work. 
+It supports multiple languages and accents, which makes it useful in multilingual applications and voicebots.
+ The audio files generated can then be played using libraries like playsound or any media player. 
+gTTS is particularly popular in educational tools, accessibility projects, and simple voice assistants. 
+It has minimal setup, making it beginner-friendly. However, it’s not ideal for offline or high-frequency usage due to API limitations.
+It’s a powerful tool for voice generation with minimal code and excellent audio quality.
+
+📁 os – Python’s Operating System Interface
+The os module is a built-in Python library that provids functions to interact with the operating system. 
+It allows developers to manage files, folders, and environment variables directly from Python scripts.
+ In the context of audio projects, os.path.exists() is commonly used to check whether the audio file is present before playing it, which helps prevent runtime errors. 
+You can also use os.getcwd() to get the current working directory or os.listdir() to list all files in a folder.
+These features make os indispensable for building dynamic, file-aware applications.
+It's platform-independent, meaning it works across Windows, Linux, and macOS. Additionally, it enables shell command execution with os.system() and supports file manipulation like deleting or renaming files.
+Because it's built-in, there's no need to install it separately. It’s widely used in automation, scripting, deployment, and file-handling tasks. 
+Os is a versatile and foundational tool for Python developers.
